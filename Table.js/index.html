@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+<body>
+        <script>
+           var studentCollection=[
+           {studentName:"Thanusuyaa", studentId:1, mark:95},
+           {studentName:"Thanapriya", studentId:2, mark:96},
+           {studentName:"Saravana", studentId:3, mark:97},
+           {studentName:"Akash", studentId:4, mark:98}]
+           document.write("<table>")
+           document.write("<tr><th>studentName</th><th>studentId</th><th>mark</th></tr>")
+           studentCollection.forEach(a => { document.write("<tr><td>"+a.studentName+"</td><td>"+a.studentId+"</td><td>"+a.mark+"</td><tr>")
+           });
+           document.write("</table")
+        </script>
+       
+</body>
+</html>
