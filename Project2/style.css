@@ -5,7 +5,7 @@ html{
      box-sizing: inherit;
 }
 .spacer{
-    height: 150px;
+    height: 128px;
 }
 .loader1{
     height: 5rem;
@@ -13,17 +13,16 @@ html{
     display: flex;
     justify-content: center;
 }
-.loader1 {
+.loader1 > div {
     border: solid 5px red;
-    transition: spinner1 all 5s 1s ease-out;
     border-radius: 50%;
     width: 4rem;
     height:4rem;
     border-top: white solid 5px;
-    animation:spinner1 1s infinte 3s linear;
+    animation:spinner 2s linear infinite;
     animation-direction: alternate;
 }
-@keyframes spinner1{
+@keyframes spinner{
     from {
         transform: rotate(0);
     }
@@ -37,21 +36,22 @@ html{
     display: flex;
     justify-content: center; 
 }
-.loader2 {
-    border: solid 5px red;
+.loader2 > div {
+    border: solid 5px green;
     border-radius: 50%;
     width: 4rem;
     height:4rem;
     border-top: white solid 5px;
     border-bottom: white solid 5px;
-    animation:spinner2 2s linear infinite;
+    animation:loader 1s linear infinite;
+    animation-direction: alternate;
 }
-@keyframes spinner2{
+@keyframes loader{
     from {
         transform: rotate(0);
     }
     to {
-        transform: rotate(45);
+        transform: rotate(60deg);
     }
 }
 .loader3{
@@ -59,33 +59,33 @@ html{
     align-items: center;
     display: flex;
     justify-content: center; 
+    gap:0.5rem;
 }
-.loader3 first{
-    border: solid 35px red;
-    transition: ripple all 5s 1s ease-out;
+.loader3 > div{
+    background-color: blue;
     width: 1%;
-    height:10rem;
-    animation:ripple 1s infinte 3s linear;
+    height:10rem;   
 }
-.loader3 second{
-    border: solid 35px red;
-    transition: ripple all 5s 1s ease-out;
-    width: 1%;
-    height:10rem;
-    animation:ripple 1s infinte 3s linear;
+.loader3 .first{
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0.4s;
 }
-.loader3 third{
-    border: solid 35px red;
-    transition: ripple all 5s 1s ease-out;
-    width: 1%;
-    height:10rem;
-    animation:ripple 1s infinte 3s linear;
+.loader3 .second{
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0.8s;
 }
-@keyframes spinner2{
-    from {
-        transform: rotate(0);
+.loader3 .third{
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0.6s;
+}
+@keyframes expander {
+    0% {
+        height: 100px;
     }
-    to {
-        transform: rotate(45);
+    50%{
+       height:150px;
+    }
+    100% {
+       height:100px; 
     }
 }
