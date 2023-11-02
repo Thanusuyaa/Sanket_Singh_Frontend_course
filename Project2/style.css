@@ -35,8 +35,7 @@ html{
     height: 5rem;
     align-items: center;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .loader2 {
     border: solid 5px red;
@@ -53,18 +52,40 @@ html{
     }
     to {
         transform: rotate(45);
-        background-color: green;
-    }
-    100%{
-        transform: rotate(36deg0);
-  
     }
 }
 .loader3{
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+.loader3 first{
     border: solid 35px red;
-    transition: loader all 5s 1s ease-out;
+    transition: ripple all 5s 1s ease-out;
     width: 1%;
     height:10rem;
-    animation:loader 1s infinte 3s linear;
-    animation-direction: alternate;
+    animation:ripple 1s infinte 3s linear;
+}
+.loader3 second{
+    border: solid 35px red;
+    transition: ripple all 5s 1s ease-out;
+    width: 1%;
+    height:10rem;
+    animation:ripple 1s infinte 3s linear;
+}
+.loader3 third{
+    border: solid 35px red;
+    transition: ripple all 5s 1s ease-out;
+    width: 1%;
+    height:10rem;
+    animation:ripple 1s infinte 3s linear;
+}
+@keyframes spinner2{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(45);
+    }
 }
