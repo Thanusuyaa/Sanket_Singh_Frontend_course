@@ -4,42 +4,67 @@ html{
 *,*::before, *::after{
      box-sizing: inherit;
 }
-.loader{
-    background-color: grey;
+.spacer{
+    height: 150px;
+}
+.loader1{
     height: 5rem;
     align-items: center;
     display: flex;
     justify-content: center;
 }
-.loader1{
+.loader1 {
     border: solid 5px red;
-    transition: spinner all 5s 1s ease-out;
+    transition: spinner1 all 5s 1s ease-out;
     border-radius: 50%;
     width: 4rem;
     height:4rem;
     border-top: white solid 5px;
-    animation:spinner 1s infinte 3s linear;
+    animation:spinner1 1s infinte 3s linear;
     animation-direction: alternate;
 }
-@keyframes spinner{
-    0% {
+@keyframes spinner1{
+    from {
         transform: rotate(0);
-        background-color: red;
     }
-    50% {
+    to {
+        transform: rotate(360 deg);
+    }
+}
+.loader2{
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.loader2 {
+    border: solid 5px red;
+    border-radius: 50%;
+    width: 4rem;
+    height:4rem;
+    border-top: white solid 5px;
+    border-bottom: white solid 5px;
+    animation:spinner2 2s linear infinite;
+}
+@keyframes spinner2{
+    from {
+        transform: rotate(0);
+    }
+    to {
         transform: rotate(45);
         background-color: green;
     }
     100%{
-        transform: rotate(90);
-        background-color: yellow;
+        transform: rotate(36deg0);
+  
     }
-    150%{
-        transform: rotate(180);
-        background-color: blue;
-    }
-    200%{
-        transform: rotate(360);
-        background-color: red;
-    }
+}
+.loader3{
+    border: solid 35px red;
+    transition: loader all 5s 1s ease-out;
+    width: 1%;
+    height:10rem;
+    animation:loader 1s infinte 3s linear;
+    animation-direction: alternate;
 }
