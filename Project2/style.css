@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+     box-sizing: inherit;
+}
+.loader{
+    background-color: grey;
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.loader1{
+    border: solid 5px red;
+    transition: spinner all 5s 1s ease-out;
+    border-radius: 50%;
+    width: 4rem;
+    height:4rem;
+    border-top: white solid 5px;
+    animation:spinner 1s infinte 3s linear;
+    animation-direction: alternate;
+}
+@keyframes spinner{
+    0% {
+        transform: rotate(0);
+        background-color: red;
+    }
+    50% {
+        transform: rotate(45);
+        background-color: green;
+    }
+    100%{
+        transform: rotate(90);
+        background-color: yellow;
+    }
+    150%{
+        transform: rotate(180);
+        background-color: blue;
+    }
+    200%{
+        transform: rotate(360);
+        background-color: red;
+    }
+}

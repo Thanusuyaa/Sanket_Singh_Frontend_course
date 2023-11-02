@@ -8,13 +8,13 @@
 <body>
         <script>
            var studentCollection=[
-           {studentName:"Thanusuyaa", studentId:1, mark:95},
-           {studentName:"Thanapriya", studentId:2, mark:96},
-           {studentName:"Saravana", studentId:3, mark:97},
-           {studentName:"Akash", studentId:4, mark:98}]
+           {studentName:"Thanusuyaa", studentId:1, mark:95,rank:4, grade:A},
+           {studentName:"Thanapriya", studentId:2, mark:96,rank:3, grade:A},
+           {studentName:"Saravana", studentId:3, mark:97,rank:2, grade:A},
+           {studentName:"Akash", studentId:4, mark:98,rank:1, grade:A}]
            document.write("<table>")
-           document.write("<tr><th>studentName</th><th>studentId</th><th>mark</th></tr>")
-           studentCollection.forEach(a => { document.write("<tr><td>"+a.studentName+"</td><td>"+a.studentId+"</td><td>"+a.mark+"</td><tr>")
+           document.write("<tr><th>studentName</th><th>studentId</th><th>mark</th><th>rank</th><th>grade</th></tr>")
+           studentCollection.forEach(a => { document.write("<tr><td>"+a.studentName+"</td><td>"+a.studentId+"</td><td>"+a.mark+"</td></tr>")
            });
            document.write("</table")
         </script>
