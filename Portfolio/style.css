@@ -3,6 +3,10 @@
     --org: #F3B664;
     --lightorg:#F1EB90;
     --green:#9FBB73;
+    --violet:#860A35;
+    --grey:#B0A695;
+    --blue:#435585;
+    --pale:#F5E8C7;
 }
 html{
     box-sizing: border-box;
@@ -12,7 +16,78 @@ html{
 }
 body{
     color: black;
-    background-color: var(--cream);
+    background-color: var(--green);
     padding: 0;
     margin: 0;
+}
+#intro{
+    padding-bottom: 5rem;
+}
+#intro p{
+    color: var(--violet);
+    line-height: 2.5;
+    font-size: 1.5rem;
+}
+#intro h2{
+    font-size: 3rem;
+}
+.name span{
+    display: block;
+    font-size: 1.5rem;
+}
+.profile p{
+    font-weight: normal;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+#experience ul{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+#experience li{
+    list-style-type: none;
+}
+#experience a {
+    color: whitesmoke;
+}
+.hire{
+    width: 400px;
+    padding: 3rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.hire p:last-child{
+   margin-top: 3rem;
+}
+.footer{
+    margin-top: 1rem;
+    background-color: var(--cream);
+}
+nav{
+    font-size: 80%;
+    padding: 1rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: var(--violet);
+    font-size: 1.2rem;
+}
+nav li:first-child{
+    flex-grow: 1;
+    font-size: 1.5rem;
 }
