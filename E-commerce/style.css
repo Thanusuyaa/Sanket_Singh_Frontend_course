@@ -5,3 +5,28 @@
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
   }
+  .divider{
+    height: 3rem;
+    background-color: white;
+  }
+  .product-image-container{
+    display: flex;
+    padding: 2rem;
+    height: 250px;
+  }
+  .product-image{
+    max-width: 160px;
+    max-height: 160px;
+  }
+  @media (max-width: 600px){
+    .product-card{
+      margin: 1rem auto;
+      max-width: 275px;
+    }
+  }
+  @media (max-width: 920px){
+    .product-card{
+      margin: 1rem auto;
+      max-width: 275px ;
+    }
+  }
