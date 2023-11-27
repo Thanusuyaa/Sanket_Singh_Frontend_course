@@ -1,0 +1,37 @@
+:root{
+    --blue-grey:#ecf0f1;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+#header{
+    background-color: var(--blue-grey);
+    padding: 1.25rem;
+}
+#header .header-wrapper .logo{
+    line-height:1.5 ;
+    font-size: 1.45rem;
+}
+#header .header-wrapper .logo a{
+    color: black;
+    letter-spacing: 5px;
+}
+#header .header-wrapper .useraction{
+    font-size: 1rem;
+    gap: 1rem;
+    line-height: 1.5;
+}
+#header .header-wrapper .useraction .logout-btn{
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+#header .header-wrapper .useraction a{
+    color: black;
+    text-decoration: none;
+}
+#header .header-wrapper .useraction a:hover{
+    text-decoration: underline;
+}
